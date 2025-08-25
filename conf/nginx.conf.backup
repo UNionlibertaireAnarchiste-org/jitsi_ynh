@@ -1,14 +1,11 @@
 root __INSTALL_DIR__/jitsi-meet-web;
 
 # fix https://github.com/YunoHost-Apps/jitsi_ynh/issues/113
-more_set_headers "Content-Security-Policy: frame-ancestors *";
+more_set_headers "Content-Security-Policy: frame-ancestors 'self'";
 
 # ssi on with javascript for multidomain variables in config.js
 ssi on;
 ssi_types application/x-javascript application/javascript;
-# Headers personnalisés LiberChat
-more_set_headers "X-Frame-Options: ALLOWALL";
-more_set_headers "X-Powered-By: LiberChat";
 
 index index.html index.htm;
 error_page 404 /static/404.html;

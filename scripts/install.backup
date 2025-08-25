@@ -46,11 +46,6 @@ gpasswd --add www-data "$app"
 ynh_script_progression "Setting up source files..."
 
 _setup_sources
-# Cloner le fork LiberChat personnalisé depuis UNionlibertaireAnarchiste-org
-ynh_script_progression "Cloning LiberChat custom fork..."
-git clone https://github.com/UNionlibertaireAnarchiste-org/jitsi-meet.git "$install_dir/jitsi-meet-web-custom"
-cp -r "$install_dir/jitsi-meet-web-custom/"* "$install_dir/jitsi-meet-web/"
-
 
 chmod 750 "$install_dir"
 chmod -R o-rwx "$install_dir"
