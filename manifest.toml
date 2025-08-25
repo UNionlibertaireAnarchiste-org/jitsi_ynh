@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "liberchat-video"
 name = "LiberChat Vidéo"
-description.en = "LiberChat video conferencing application"
-description.fr = "Application de vidéoconférence LiberChat"
+description.en = "Libre software (Apache) WebRTC JavaScript app using Jitsi Videobridge for high quality, secure, and scalable video conferences"
+description.fr = "Logiciel libre (Apache) dont Jitsi Videobridge, avec WebRTC Javascript, propose des vidéos-conférences de haute qualité, sécurisées et évolutives"
 
 version = "2.0.10078~ynh1"
 
@@ -13,8 +13,8 @@ maintainers = []
 
 [upstream]
 license = "Apache-2.0"
-website = "https://liberchat.org/"
-demo = "https://meet.liberchat.org/"
+website = "https://jitsi.org/"
+demo = "https://meet.jit.si/"
 userdoc = "https://jitsi.org/user-faq/"
 code = "https://github.com/jitsi/jitsi-meet"
 
